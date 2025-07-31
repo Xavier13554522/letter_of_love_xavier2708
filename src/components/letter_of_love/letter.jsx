@@ -1,13 +1,15 @@
 import React from 'react';
+
+import { forwardRef } from 'react';
 import './letter.css';
 
-const Letter = ({title,letter,poem,icon,colorTitle,colorLetter,colorPoem})=>{
+const Letter = forwardRef(({title,letter,poem,icon,colorTitle,colorLetter,colorPoem,colorBackground},ref)=>{
     title = title === "" ? "Title of the letter of love..." : title;
     letter = letter === "" ? "Write you letter love..." : letter;
     poem = poem === "" ? "Write a poem(optional)..." : poem;
     return(
         <>
-        <div className="container_letter">
+        <div className="container_letter" ref={ref} style={{backgroundColor:colorBackground}}>
         <h2 className="title"style={{color:colorTitle}}>{title}</h2>
         <p className="paragraph"style={{color:colorLetter}}>{letter}</p>
         <p className="poem"style={{color:colorPoem}}>{poem}</p>
@@ -17,6 +19,6 @@ const Letter = ({title,letter,poem,icon,colorTitle,colorLetter,colorPoem})=>{
         </div>
         </>
     )
-}
+})
 
 export default Letter

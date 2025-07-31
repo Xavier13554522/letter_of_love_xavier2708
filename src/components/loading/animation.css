@@ -1,0 +1,13 @@
+header{
+    animation: endLoading 2s ease-in-out forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes endLoading {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

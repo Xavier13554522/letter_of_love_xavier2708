@@ -1,4 +1,5 @@
-export function statusVerification (promise){
+
+ export function statusVerification (promise){
     let status = "pending"
     let response;
 
@@ -31,10 +32,10 @@ export function statusVerification (promise){
 
 
 export function resApi (){
-    let promise = fetch("https://poetrydb.org/title/love/lines.json")
-    .then((response) => response.json())
-    .then((data)=> data)
-    
-    return statusVerification(promise)
+        let promise = fetch("https://poetrydb.org/title/love/lines.json")
+        .then((response) => response.json())
+        .then((data)=> data)
+        
+        return statusVerification(promise)
 }
 

@@ -4,13 +4,9 @@
   box-sizing: border-box;
 }
 #root{
-  margin-top: 300px;
-  padding-bottom: 300px;
   width: 100%;
+  height: 100%;
   height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -46,7 +42,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+button,label{
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -57,10 +53,10 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+button:hover,label:hover{
   border-color: #646cff;
 }
-button:disabled {
+button:disabled,label:disabled{
   border-color: #0000;
   cursor: not-allowed;
 }

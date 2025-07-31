@@ -1,0 +1,34 @@
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 300px;
+    height: fit-content;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+@media(max-width: 635px) {
+    section{
+        display: grid;
+        scale: 0.7;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+@media(max-width: 1309px) {
+    section{
+        display: grid;
+        scale: 0.8;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media(max-width: 490px){
+}
