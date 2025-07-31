@@ -16,7 +16,7 @@ header{
 @media(max-width: 635px) {
     section{
         display: grid;
-        scale: 0.7;
+        scale: 0.2;
         justify-content: center;
         gap: 30px;
     }
@@ -24,7 +24,7 @@ header{
 @media(max-width: 1309px) {
     section{
         display: grid;
-        scale: 0.8;
+        scale: 0.6;
         justify-content: center;
         gap: 30px;
     }
