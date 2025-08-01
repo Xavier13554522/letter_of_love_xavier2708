@@ -37,9 +37,6 @@ main.jsx
 public/
 index.html
 
-markdown
-Copiar
-Editar
 
 ## 5. Descripción de Componentes
 
@@ -71,17 +68,13 @@ Editar
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/Xavier13554522/letter_of_love_xavier2708.git
-Instalar dependencias:
+### Instalar dependencias
 
-bash
-Copiar
-Editar
+```bash
 npm install
 Iniciar la app en modo desarrollo con Vite:
 
 bash
-Copiar
-Editar
 npm run dev
 Abrir http://localhost:3000 (o la URL que indique Vite en consola) en tu navegador para ver la aplicación.
 
