@@ -25,7 +25,7 @@ function App() {
     <>
     <Suspense fallback={<Loading/>}>
     <header>
-      <img src="../././public/Heart_corazón.svg" alt=""  className='img_title'/>
+      <img src="/Heart_corazón.svg" alt=""  className='img_title'/>
       <h1>Letter Of Love</h1>
     </header>
 
