@@ -11,7 +11,7 @@
 - **JavaScript ES6+** para la lógica.
 - **HTML5 y CSS3** para estructura y estilos.
 - **FileReader API** para manejar la carga de imágenes por parte del usuario.
-- **html-to-image** (biblioteca) para convertir la carta en imagen PNG.
+- **html-to-image** para convertir la carta en imagen PNG.
 - **React Icons** para iconografía.
 
 ## 3. Funcionalidades Principales
@@ -25,71 +25,79 @@
 
 ## 4. Estructura del Proyecto
 
+```
 src/
-components/
-forms/
-InputLetter.jsx
-letter_of_love/
-Letter.jsx
-Download.jsx
-App.jsx
-main.jsx
+├── components/
+│   ├── forms/
+│   │   └── InputLetter.jsx
+│   ├── letter_of_love/
+│   │   └── Letter.jsx
+│   └── Download.jsx
+├── App.jsx
+├── main.jsx
 public/
-index.html
-
+└── index.html
+```
 
 ## 5. Descripción de Componentes
 
-| Componente      | Descripción                                                       |
-|----------------|-------------------------------------------------------------------|
-| `InputLetter`  | Entrada de texto para título, carta o poema, con manejo de estado y eventos. |
-| `Letter`       | Muestra la carta personalizada en vista previa con texto e imagen.         |
-| `Download`     | Botón que convierte la carta en imagen PNG y la descarga.                  |
-| `App`          | Controla el estado global, lógica para API, subida de imágenes y colores.  |
+| Componente    | Descripción                                                        |
+|---------------|------------------------------------------------------------------|
+| InputLetter   | Entrada de texto para título, carta o poema, con manejo de estado y eventos. |
+| Letter        | Muestra la carta personalizada en vista previa con texto e imagen. |
+| Download      | Botón que convierte la carta en imagen PNG y la descarga.         |
+| App           | Controla el estado global, lógica para API, subida de imágenes y colores. |
 
 ## 6. Manejo de Estado y Hooks
 
-- Se utiliza `useState` para controlar:
+- Uso de `useState` para controlar:
   - Texto de título, carta y poema.
   - Colores de fondo y texto.
   - Imagen subida por el usuario.
   - Estado de carga y errores.
-- Se utiliza `useRef` para referenciar el DOM de la carta para la conversión a imagen.
-- Se usa `useEffect` para llamadas a la API y manejo de efectos secundarios.
+- Uso de `useRef` para referenciar el DOM de la carta para la conversión a imagen.
+- Uso de `useEffect` para llamadas a la API y manejo de efectos secundarios.
 
 ## 7. Uso de la API de Poemas
 
-- Se hace fetch a la API para obtener poemas.
+- Se hace `fetch` a la API para obtener poemas.
 - La respuesta se valida y se maneja el estado de error o carga.
 - Los poemas se muestran en el campo correspondiente y se actualizan dinámicamente.
 
 ## 8. Instrucciones para Ejecutar el Proyecto Localmente
 
 1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/Xavier13554522/letter_of_love_xavier2708.git
-### Instalar dependencias
+```bash
+git clone https://github.com/Xavier13554522/letter_of_love_xavier2708.git
+```
 
+2. Instalar dependencias:
 ```bash
 npm install
-Iniciar la app en modo desarrollo con Vite:
+```
 
-bash
+3. Iniciar la app en modo desarrollo con Vite:
+```bash
 npm run dev
-Abrir http://localhost:3000 (o la URL que indique Vite en consola) en tu navegador para ver la aplicación.
+```
 
-9. Notas sobre el Proyecto y Posibles Mejoras
+4. Abrir en tu navegador la URL que indique Vite en consola, normalmente:
+```
+http://localhost:3000
+```
+
+## 9. Notas sobre el Proyecto y Posibles Mejoras
+
 Este proyecto está pensado como una demostración funcional y base para crear cartas personalizadas. Aunque cumple con sus objetivos principales, podrían explorarse algunas mejoras o funcionalidades adicionales en el futuro, tales como:
 
-Refinar el manejo de errores y validaciones.
+- Refinar el manejo de errores y validaciones.
+- Optimizar la experiencia de usuario en dispositivos móviles.
+- Explorar nuevas formas de integración con APIs externas o servicios adicionales.
 
-Optimizar la experiencia de usuario en dispositivos móviles.
+Dado que este proyecto puede considerarse un punto de partida, muchas de estas posibles mejoras quedan abiertas a futuras revisiones o nuevos desarrollos.
 
-Explorar nuevas formas de integración con APIs externas o servicios adicionales.
+## 10. Créditos
 
-Sin embargo, dado que este proyecto puede considerarse un punto de partida, muchas de estas posibles mejoras quedan abiertas a futuras revisiones o nuevos desarrollos.
-
-10. Créditos
 Creado por Xavier Gomez.
 
 Inspiración en cartas personalizadas y generación dinámica de contenido.
