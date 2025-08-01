@@ -8,8 +8,9 @@ import { Loading } from './components/loading/loading.jsx';
 import { Download } from './components/letter_of_love/download.jsx';
 import "./components/loading/animation.css"
 import { AboutMe } from './components/about me/about_me.jsx';
-import { Analytics } from "@vercel/analytics/next"
+import { inject } from '@vercel/analytics';
 
+inject()
 function App() {
   // State to hold the letter data
   const [title, setTitle] = useState('');
@@ -25,7 +26,6 @@ function App() {
   return (
     <>
     <Suspense fallback={<Loading/>}>
-    <Analytics/>
     <header>
       <img src="/Heart_corazón.svg" alt=""  className='img_title'/>
       <h1>Letter Of Love</h1>
