@@ -3,9 +3,9 @@ import React,{useRef} from 'react';
 import { toPng } from 'html-to-image';
 import Letter from './letter';
 
-export const Download = ({letterRef,iconLoad})=>{
+export const Download = ({letterRef})=>{
         const handleDownload = () =>{
-            if(!letterRef.current || !iconLoad) return;
+            if(!letterRef.current) return;
 
         toPng(letterRef.current,{cacheBust:true,pixelRatio:2 })
         .then((dataUrl) =>{

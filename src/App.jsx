@@ -7,6 +7,7 @@ import Letter from './components/letter_of_love/letter.jsx';
 import { Loading } from './components/loading/loading.jsx';
 import { Download } from './components/letter_of_love/download.jsx';
 import "./components/loading/animation.css"
+import { AboutMe } from './components/about me/about_me.jsx';
 
 function App() {
   // State to hold the letter data
@@ -24,7 +25,7 @@ function App() {
     <>
     <Suspense fallback={<Loading/>}>
     <header>
-      <img src="../././public/Heart_corazón.svg" alt="" />
+      <img src="../././public/Heart_corazón.svg" alt=""  className='img_title'/>
       <h1>Letter Of Love</h1>
     </header>
 
@@ -40,6 +41,7 @@ function App() {
 
     </div>
     </section>
+    <AboutMe/>
     </Suspense>
     </>
   )

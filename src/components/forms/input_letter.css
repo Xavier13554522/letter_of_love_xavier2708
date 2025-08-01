@@ -6,6 +6,7 @@
     border-radius: 10px;
     padding: 50px;
     height: fit-content;
+    width: fit-content;
     background-color: #fff2;
 }
 h3{
@@ -14,15 +15,10 @@ h3{
     font-weight: 600;
     margin: 0;
 }
-
 .img_preview{
     width: 300px;
     border-radius: 10px;
     box-shadow: 0 0 10px #fff;
-}
-.img_preview:hover::before{
- content: "View Preview";
-
 }
 .container_input_img{
     display: grid;
@@ -38,11 +34,11 @@ h3{
     width: 100%;
 }
 .input_title{
+    width: 100%;
     padding: 10px;
     border-radius: 10px;
     border: solid 2px #000;
     transition: all 0.5s ease-in-out;
-    width: 100%;
 }
 .input_text{
     padding: 10px;
@@ -81,4 +77,10 @@ input[type ="file"]{
 .container_input_background{
     display: grid;
     place-items: center;
+}
+@media(max-width: 375px){
+    .container_input_letter{
+        padding: 20px;
+        scale: 0.9;
+    }
 }

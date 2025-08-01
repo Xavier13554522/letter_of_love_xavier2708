@@ -2,8 +2,8 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 300px;
     height: fit-content;
+    width: 100%;
 }
 header{
     display: flex;
@@ -16,17 +16,22 @@ header{
 @media(max-width: 635px) {
     section{
         display: grid;
-        scale: 0.2;
         justify-content: center;
         gap: 30px;
     }
+    h1{
+    font-size: 2em;
+}
+.img_title{
+    height: 100px;
+}
 }
 @media(max-width: 1309px) {
     section{
         display: grid;
-        scale: 0.6;
-        justify-content: center;
+        place-items: center;
         gap: 30px;
+        scale:0.59;
     }
 }
 

@@ -1,11 +1,11 @@
 .container_letter{
 height: fit-content;
-width: 90%;
+width:90%;
 padding: 20px;
 border: solid 1px #fff4;
 border-radius: 5px;
 overflow-wrap: break-word;
-    word-break: break-word;
+word-break: break-word;
 }
 .title{
 word-wrap: break-all;
@@ -32,7 +32,6 @@ font-size: 1.2em;
 .container_download{
     display: grid;
     place-items: center;
-    margin: auto;
     gap: 30px;
     height: 100%;
 }
